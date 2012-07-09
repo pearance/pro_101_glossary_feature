@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pro 101 Glossary Feature feature.
+ */
+
+include_once 'pro_101_glossary_feature.features.inc';
