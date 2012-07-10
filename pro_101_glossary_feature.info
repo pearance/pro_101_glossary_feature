@@ -45,3 +45,4 @@ features[variable][] = lexicon_superscript
 features[variable][] = lexicon_term_class
 features[variable][] = lexicon_title_3
 features[variable][] = lexicon_vids
+features[variable][] = pathauto_taxonomy_term_glossary_pattern
