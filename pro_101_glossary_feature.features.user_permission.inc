@@ -36,14 +36,18 @@ function pro_101_glossary_feature_user_default_permissions() {
   // Exported permission: delete terms in glossary.
   $permissions['delete terms in glossary'] = array(
     'name' => 'delete terms in glossary',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: edit terms in glossary.
   $permissions['edit terms in glossary'] = array(
     'name' => 'edit terms in glossary',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'developer',
+    ),
     'module' => 'taxonomy',
   );
 
