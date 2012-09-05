@@ -24,6 +24,15 @@ function pro_101_glossary_feature_user_default_permissions() {
     'module' => 'lexicon',
   );
 
+  // Exported permission: administer glossary vocabulary terms.
+  $permissions['administer glossary vocabulary terms'] = array(
+    'name' => 'administer glossary vocabulary terms',
+    'roles' => array(
+      0 => 'developer',
+    ),
+    'module' => 'vppr',
+  );
+
   // Exported permission: administer lexicon.
   $permissions['administer lexicon'] = array(
     'name' => 'administer lexicon',
