@@ -47,6 +47,7 @@ function pro_101_glossary_feature_user_default_permissions() {
     'name' => 'delete terms in glossary',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'taxonomy',
   );
@@ -56,6 +57,7 @@ function pro_101_glossary_feature_user_default_permissions() {
     'name' => 'edit terms in glossary',
     'roles' => array(
       0 => 'developer',
+      1 => 'support',
     ),
     'module' => 'taxonomy',
   );
