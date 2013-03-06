@@ -42,7 +42,7 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'lexicon_disable_indicator';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['lexicon_disable_indicator'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -71,7 +71,10 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'lexicon_introduction_3';
   $strongarm->value = array(
-    'value' => '',
+    'value' => '<h2 class="node-title">Glossary of Professional Terms</h2><p>
+	Click one of the letters below to advance the page to terms beginning with that letter.
+</p>
+',
     'format' => 'plain_text',
   );
   $export['lexicon_introduction_3'] = $strongarm;
@@ -87,14 +90,14 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'lexicon_link_related';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['lexicon_link_related'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'lexicon_link_to_term_page';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['lexicon_link_to_term_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -136,7 +139,7 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'lexicon_replace';
-  $strongarm->value = 'template';
+  $strongarm->value = 'dfn';
   $export['lexicon_replace'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -150,7 +153,7 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'lexicon_separate_letters';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['lexicon_separate_letters'] = $strongarm;
 
   $strongarm = new stdClass();
