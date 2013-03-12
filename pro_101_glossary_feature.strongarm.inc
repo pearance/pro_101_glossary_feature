@@ -20,6 +20,54 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'lexicon_alphabar_instruction';
+  $strongarm->value = '';
+  $export['lexicon_alphabar_instruction'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'lexicon_alphabar_separator';
+  $strongarm->value = '&bull;';
+  $export['lexicon_alphabar_separator'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'lexicon_alphabet';
+  $strongarm->value = array(
+    0 => 'a',
+    1 => 'b',
+    2 => 'c',
+    3 => 'd',
+    4 => 'e',
+    5 => 'f',
+    6 => 'g',
+    7 => 'h',
+    8 => 'i',
+    9 => 'j',
+    10 => 'k',
+    11 => 'l',
+    12 => 'm',
+    13 => 'n',
+    14 => 'o',
+    15 => 'p',
+    16 => 'q',
+    17 => 'r',
+    18 => 's',
+    19 => 't',
+    20 => 'u',
+    21 => 'v',
+    22 => 'w',
+    23 => 'x',
+    24 => 'y',
+    25 => 'z',
+  );
+  $export['lexicon_alphabet'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'lexicon_blocking_tags';
   $strongarm->value = 'abbr acronym';
   $export['lexicon_blocking_tags'] = $strongarm;
@@ -37,6 +85,24 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm->name = 'lexicon_click_option';
   $strongarm->value = '1';
   $export['lexicon_click_option'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'lexicon_digits';
+  $strongarm->value = array(
+    0 => '0',
+    1 => '1',
+    2 => '2',
+    3 => '3',
+    4 => '4',
+    5 => '5',
+    6 => '6',
+    7 => '7',
+    8 => '8',
+    9 => '9',
+  );
+  $export['lexicon_digits'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -183,6 +249,13 @@ function pro_101_glossary_feature_strongarm() {
   $strongarm->name = 'lexicon_superscript';
   $strongarm->value = 'i';
   $export['lexicon_superscript'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'lexicon_suppress_unused';
+  $strongarm->value = 0;
+  $export['lexicon_suppress_unused'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
